@@ -1,0 +1,134 @@
+/* ====== General Body Styles ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #F2D0A9; 
+    color: #333333; /* Dark Grey Text for Readability */
+    margin: 0;
+    padding: 20px;
+}
+
+/* ====== Outer Box (Updated to #925E78) ====== */
+.outer-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: #f2d0a9;
+    background-size: 200% 200%;
+    animation: gradientShift 6s infinite alternate ease-in-out;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.outer-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* ====== Inner Box (Updated to #BD93BD) ====== */
+.inner-container {
+    background: #f1e3d3; /* Soft Muted Lavender */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.inner-container:hover {
+    box-shadow: inset 0px 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* ====== Heading Styles ====== */
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2C3E50; /* Deep Navy Blue */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Chart Canvas Styles ====== */
+canvas {
+    max-width: 100%;
+    background: #f1e3d3; /* Light Grey Background */
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Chart Axis & Text Colors for Readability ====== */
+.chart-container .chartjs-render-monitor text {
+    fill: #FFFFFF !important; /* White Text */
+    font-weight: bold;
+}
+
+/* ====== Chart Grid Lines & Axis Titles ====== */
+.chart-container .chartjs-render-monitor .grid-line {
+    stroke: #E0E0E0; /* Soft Grey Grid Lines */
+}
+
+.chart-container .chartjs-render-monitor .axis-title {
+    fill: #FFFFFF !important; /* White Axis Titles */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ====== Chart Tooltip Styles ====== */
+.chartjs-tooltip {
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ====== Button Styles ====== */
+button {
+    background: #2C3E50; /* Deep Navy Blue */
+    color: #FFFFFF; /* White Text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #1A252F; /* Slightly Darker Blue */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Loader Animation ====== */
+.loader {
+    display: none;
+    margin: 20px auto;
+    border: 6px solid rgba(146, 94, 120, 0.3);
+    border-top: 6px solid #925E78;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ====== Error Message ====== */
+.error-message {
+    color: #C0392B; /* Soft Red for Errors */
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* ====== Smooth Transitions for Text and Elements ====== */
+h2, p, canvas, .container, button {
+    transition: all 0.3s ease-in-out;
+}
