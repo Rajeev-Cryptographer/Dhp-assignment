@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("http://127.0.0.1:5000/data")  // Ensure this matches your backend URL
+    fetch("https://rajeev1.pythonanywhere.com/data")  // Ensure this matches your backend URL
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok");
             return response.json();
